@@ -93,44 +93,34 @@ dass Sie bei den Eigenschaften dieser Datei im Solution Explorer die Option *Cop
 der Einstellung *Copy to Output Directory* setzen.
 
 ```c#
-using System;
-using System.IO;
 using System.Text;
 using System.Xml;
 
-namespace XmlParserDemo
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // Einen leeren Elementbaum im Speicher erstellen.
-            var doc = new XmlDocument();
-            // Die Datei books.xml mit UTF-8 Codierung einlesen.
-            using var xmlFile = new StreamReader(path: "books.xml", encoding: Encoding.UTF8);
+// Einen leeren Elementbaum im Speicher erstellen.
+var doc = new XmlDocument();
+// Die Datei books.xml mit UTF-8 Codierung einlesen.
+var xmlFile = new StreamReader(path: "books.xml", encoding: Encoding.UTF8);
 
-            // Den Elementbaum aufbauen (parsen).
-            doc.Load(xmlFile);
-            // Das root Element kommt nur 1x vor. Deswegen kann leicht darauf zugegriffen werden.
-            XmlElement root = doc.DocumentElement;
-            foreach (XmlElement buch in root.GetElementsByTagName("Buch"))
-            {
-                Console.WriteLine($"Buch ID    {buch.GetAttribute("id")}");
-                // Eine C# Spezialität ist der "Indexer". Eckige Klammern bedeuten nicht immer
-                // einen Arrayzugriff, sie können auch Elemente einer Liste suchen.
-                // Hier wird das Unterelement Titel gesucht.
-                Console.WriteLine($"Titel:     {buch["Titel"].InnerText}");
-                // Da mehrere Kategorien vorkommen können, verwenden wir wieder eine Schleife.
-                foreach (XmlElement kat in buch.GetElementsByTagName("Kategorie"))
-                {
-                    // Vorsicht: kat["NameEN"] würde NULL liefern, wenn das ELement NameEN nicht
-                    //           existiert. Deswegen ?.
-                    Console.WriteLine($"Kategorie: {kat["NameDE"].InnerText} - {kat["NameEN"]?.InnerText}");
-                }
-            }
+// Den Elementbaum aufbauen (parsen).
+doc.Load(xmlFile);
+// Das root Element kommt nur 1x vor. Deswegen kann leicht darauf zugegriffen werden.
+XmlElement? root = doc.DocumentElement;
+if (root != null)
+    foreach (XmlElement buch in root.GetElementsByTagName("Buch"))
+    {
+        Console.WriteLine($"Buch ID    {buch.GetAttribute("id")}");
+        // Eine C# Spezialität ist der "Indexer". Eckige Klammern bedeuten nicht immer
+        // einen Arrayzugriff, sie können auch Elemente einer Liste suchen.
+        // Hier wird das Unterelement Titel gesucht.
+        Console.WriteLine($"Titel:     {buch["Titel"]?.InnerText}");
+        // Da mehrere Kategorien vorkommen können, verwenden wir wieder eine Schleife.
+        foreach (XmlElement kat in buch.GetElementsByTagName("Kategorie"))
+        {
+            // Vorsicht: kat["NameEN"] würde NULL liefern, wenn das ELement NameEN nicht
+            //           existiert. Deswegen ?.
+            Console.WriteLine($"Kategorie: {kat["NameDE"]?.InnerText} - {kat["NameEN"]?.InnerText}");
         }
     }
-}
 ```
 
 ### Übung
