@@ -7,8 +7,8 @@
 
 Betrachten Sie das folgende JSON Dokument mit Studierenden. Schreiben Sie Anweisungen, die folgende
 Informationen im Browser ausgeben. Gehen Sie dabei wie im Video "JSON Tutorial For Beginners" vor,
-indem Sie eine Datei *index.html* erstellen (Position 11:00). Binden Sie danach die Datei *school.js*
-mit dem *script* Element ein und geben Sie die folgenden Informationen in der Konsole des Browsers aus.
+indem Sie eine Datei *index.html* erstellen (Position 11:00). Binden Sie danach die unten angeführte JSON Datei 
+im *script* Element ein und geben Sie die folgenden Informationen in der Konsole des Browsers aus.
 
 Hinweis: Erstellen Sie eine Variable und weisen Sie das nachfolgende JSON Dokument als Inhalt zu.
 
