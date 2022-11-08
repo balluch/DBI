@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        const data =
+            [
+                {
+                    "vorname": "Max",
+                    "nachname": "Mustermann",
+                    "klassen": ["5AKIF", "3AKIF", "5BAIF"],
+                    "auto":
+                        [
+                            {
+                                "kennzeichen": "W12345",
+                                "marke": "Tesla",
+                                "modell": "S3"
+                            },
+                            {
+                                "kennzeichen": "W54321",
+                                "marke": "VW"
+                            }
+                        ]
+                },
+                {
+                    "vorname": "Susanne",
+                    "nachname": "Musterfrau"
+                }
+            ];
+        console.log(data[0].vorname, data[0].nachname);
+        console.log(data[1].vorname, data[1].nachname);
+        // Welche Klasse wurde von der ersten Person als erstes besucht?
+        console.log(data[0].klassen[0]);
+        // Welches Kennzeichen hat das erste Auto der ersten Person?
+        console.log(data[0].auto[0].kennzeichen);
+        console.log(data[0]["auto"][0]["kennzeichen"]);
+        // Welches Modell hat das erste Auto der ersten Person?
+        console.log(data[0].auto[0].modell);
+        // Welches Modell hat das zweite Auto der ersten Person?
+        console.log(data[0].auto[1].modell);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
