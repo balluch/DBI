@@ -22,7 +22,7 @@ Das Dockerimage beinhaltet *Azure SQL Edge*, eine Engine die auf SQL Server basi
 IoT Anwendungen gemacht wurde. Die Limitierungen sind für die Ausbildung nicht relevant und
 betreffen nur Bereiche für große Serverinstallationen (siehe https://learn.microsoft.com/en-us/azure/azure-sql-edge/features#unsupported-features).
 **Das Dockerimage läuft auf allen Plattformen, also auch auf Apple M1 oder M2 Prozessoren mit
-ARM Architektur.** Danke an Herrn Pompe aus der 5AAIF für den Hinweis auf dieses Image.
+ARM Architektur.**
 
 ### Starten und Stoppen des Containers
 
