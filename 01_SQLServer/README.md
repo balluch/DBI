@@ -7,7 +7,7 @@
 Die einfachste Möglichkeit, mit SQL Server zu arbeiten, ist das Verwenden des Docker Images. Lade dafür
 Docker für dein Betriebssystem von [docs.docker.com](https://docs.docker.com/get-docker/).
 
-Die nachfolgende Anweisung in der Eingabeaufforderung (Konsole) legt einen Container
+Die nachfolgende Anweisung in der Eingabeaufforderung (Konsole unter Windows: Windows-Taste + Eingabe "cmd" + Enter) legt einen Container
 mit dem Namen *sqlserver2019* an. Das Passwort wird in *SA_PASSWORD* gesetzt und ist in diesem
 Beispiel *SqlServer2019*. Der Benutzer ist *sa*. Das Passwort muss folgender Richtlinie genügen:
 
