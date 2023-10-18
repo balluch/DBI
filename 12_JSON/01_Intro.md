@@ -16,6 +16,8 @@ Hinweis: Erstellen Sie eine Variable und weisen Sie das nachfolgende JSON Dokume
 - Geben Sie den Nachnamen des zweiten Studierenden der ersten Klasse aus.
 - Geben Sie den Wert von *dateOfBirth* des zweiten Schülers der ersten Klasse aus. Was passiert?
 
+- Erstellen Sie eine zweite Variable new_data und weisen Sie das nachfolgende JSON Dokument als Inhalt zu. Ändern Sie den Inhalt der Variable, sodass Sie über die ID einer Klasse direkt auf die Klasse zugreifen können. Beispielsweise soll *new_data["5BAIF"]* die Klasse 5BAIF ausgeben. Geben Sie anschließend die Klasse 5CAIF aus.
+
 ```javascript
 [
     {
