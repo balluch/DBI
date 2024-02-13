@@ -170,7 +170,7 @@ eine registrierung bei Oracle nötig.
 Zum Anlegen einer Verbindung klicken Sie wieder auf das grüne Plus in der Palette Connections und richten die
 Verbindung wie folgt ein:
 
-- Verbindungsname: frei wählbar (z.B. *SchulDb*)
+- Verbindungsname: frei wählbar (z.B. *system*)
 - Benutzername: *system*
 - Kennwort: *oracle*
 - Service-Name (statt SID): *orcl*
