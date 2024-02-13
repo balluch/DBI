@@ -158,10 +158,6 @@ Test!
 
 ## Installation von SQL Developer
 
-SQL Developer ist zwar in der virtuellen Maschine integriert, eine Installation unter ihrem
-Hostbetriebssystem erlaubt allerdings ein flüssigeres Arbeiten. Dafür verbindet sich SQL Developer
-über TCP (Port 1521) zu Ihrer virtuellen Maschine, die natürlich laufen muss.
-
 Sie können SQL Developer direkt von der
 [Downloadseite von Oracle](https://www.oracle.com/database/sqldeveloper/technologies/download/) laden.
 Die ZIP Datei muss nur entpackt und sqldeveloper.exe gestartet werden. Für den Download ist
