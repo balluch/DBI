@@ -173,7 +173,7 @@ Verbindung wie folgt ein:
 - Verbindungsname: frei wählbar (z.B. *system*)
 - Benutzername: *system*
 - Kennwort: *oracle*
-- Service-Name (statt SID): *orcl*
+- Service-Name (statt SID): *XEPDB1*
 
 Nach dem Klick auf Test und Save steht die neue Verbindung nun in der Palette Connections zur
 Verfügung. Ein Klick auf die Verbindung öffnet das Abfragefenster.
