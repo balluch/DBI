@@ -18,8 +18,7 @@ einfach stehenbleiben.
 
 ### Windows
 
-Die Installation von Docker Desktop und das Laden des Containers ist als Video
-verfügbar: https://youtu.be/ekmGqHBVNTM. Es sind folgende Schritte erforderlich:
+Für die Installation von Docker Desktop und dem Laden des Containers sind folgende Schritte erforderlich:
 
 - Laden des Linux kernel update packages über den Punkt
   [WSL2 Linux kernel update package for x64 machines](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
