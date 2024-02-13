@@ -180,9 +180,6 @@ Verfügung. Ein Klick auf die Verbindung öffnet das Abfragefenster.
 
 ![](images/sqlDeveloperConnection.png)
 
-> Wenn Sie sich als System User verbinden wollen, geben Sie als Benutzername *system* und als
-> Passwort *oracle* ein.
-
 
 ## Weiters Tool zum Betrachten der Datenbanken
 
