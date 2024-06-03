@@ -1,6 +1,11 @@
-DROP VIEW vSchuelerergebnis;
+-- User: system
+GRANT create view TO demo; -- Statt dem User "demo" kann ein beliebiger User verwendet werden.
+
+
+-- User: demo (oder äquivalenter User)
 DROP TABLE Schueler CASCADE CONSTRAINTS;
 DROP TABLE Ergebnisse CASCADE CONSTRAINTS;
+DROP VIEW vSchuelerergebnis;
 
 CREATE TABLE Schueler (
     S_ID        INTEGER       PRIMARY KEY,
