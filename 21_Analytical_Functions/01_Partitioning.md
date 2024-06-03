@@ -60,8 +60,8 @@ ORDER BY E_Bewerb, S_Klasse, E_ID;
 ```
 
 Das ist natürlich nicht nur für Studierende kompliziert, deswegen haben sich die Datenbankhersteller
-Mechanismen überlegt, wie unterschiedliche Gruppierungsgebenen in einer Abfrage kombiniert werden können.
-Dieser Mechanismus das *PARTITION BY*:
+Mechanismen überlegt, wie unterschiedliche Gruppierungsebenen in einer Abfrage kombiniert werden können.
+Dieser Mechanismus ist das *PARTITION BY*:
 
 **PARTITION BY erlaubt es uns, innerhalb einer Abfrage nochmals zu Gruppieren und Daten zu aggregieren.
 Dabei geben wir "vom Feinen ins Grobe"**.
