@@ -1,8 +1,10 @@
 -- User: system
-GRANT create view TO demo; -- Statt dem User "demo" kann ein beliebiger User verwendet werden.
+DROP USER Sportfest CASCADE;
+CREATE USER Sportfest IDENTIFIED BY oracle;
+GRANT CONNECT, RESOURCE, CREATE VIEW TO Sportfest;
+GRANT UNLIMITED TABLESPACE TO Sportfest;
 
-
--- User: demo (oder äquivalenter User)
+-- User: Sportfest
 DROP TABLE Schueler CASCADE CONSTRAINTS;
 DROP TABLE Ergebnisse CASCADE CONSTRAINTS;
 DROP VIEW vSchuelerergebnis;
